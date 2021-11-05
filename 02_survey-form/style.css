@@ -1,0 +1,66 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#title,
+#description,
+label {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+textarea {
+  padding: 0;
+  width: 400px;
+  resize: none;
+}
+
+html,
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+input:valid,
+select:valid {
+  border: 2px solid #36ff36;
+}
+
+input:invalid,
+select:invalid {
+  border: 2px dotted #ff4040;
+}
+
+input:invalid:required,
+select:invalid:required {
+  background-image: linear-gradient(-90deg, white, rgb(255, 235, 235));
+}
+
+#contact,
+.contact-button {
+  display: flex;
+  flex-direction: row;
+}
+
+#submit {
+  width: fit-content;
+}

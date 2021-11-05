@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <div class="flex-center">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">We could use some additional information.</p>
+    </div>
+    <form id="survey-form">
+      <label id="name-label" for="name">Your name</label>
+      <input id="name" type="text" name="user-name" placeholder="or pseudonym" required />
+
+      <label id="number-label" for="number">Your age</label>
+      <input
+        id="number"
+        type="number"
+        name="user-age"
+        placeholder="18 < age < 121"
+        min="18"
+        max="121"
+      />
+
+      <label id="email-label" for="email">Your e-mail</label>
+      <input id="email" type="email" name="user-email" placeholder="your@email.abc" required />
+
+      <label id="tel-label" for="tel">Your phone</label>
+      <input id="tel" type="tel" name="user-tel" placeholder="555-555-5555" required />
+
+      <div id="contact">
+        <label id="pref-label">Primary contact preference:</label>
+        <div class="contact-button">
+          <input id="radio-email" type="radio" name="preference" value="email" />
+          <label id="pref-email" for="radio-email">e-mail</label>
+        </div>
+        <div class="contact-button">
+          <input id="radio-phone" type="radio" name="preference" value="phone" />
+          <label id="pref-phone" for="radio-phone">phone</label>
+        </div>
+      </div>
+
+      <label id="dropdown-label" for="dropdown">Your motivation to seek help</label>
+      <select id="dropdown" required>
+        <option disabled selected value>Select an option</option>
+        <option value="foo">foo</option>
+        <option value="bar">bar</option>
+      </select>
+
+      <label id="checks-label" for="checks">What you need help with</label>
+      <div id="checks">
+        <div class="checkbox">
+          <input id="cb-foo" type="checkbox" name="submit-foo" value="foo" />
+          <label class="cb-label" for="cb-foo">foo</label>
+          <input id="cb-bar" type="checkbox" name="submit-bar" value="bar" />
+          <label class="cb-label" for="cb-bar">bar</label>
+        </div>
+      </div>
+
+      <label id="textarea-label" for="notes">Additional information</label>
+      <textarea rows="10" id="notes" name="notes"></textarea>
+
+      <div class="flex-center">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
