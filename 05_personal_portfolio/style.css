@@ -1,0 +1,44 @@
+nav {
+  top: 0;
+  position: fixed;
+}
+
+section {
+  height: 100vh;
+}
+
+#project-tiles {
+  width: 900px;
+  background-color: aquamarine;
+  display: grid;
+  grid-template-areas: "
+  main-tile other-tile
+  main-tile other-tile
+  ";
+}
+
+#project-tiles:first-child {
+  width: 200px;
+  height: 200px;
+  grid-area: main-tile;
+  background-color: blue;
+}
+
+#project-tiles:nth-child(n + 2) {
+  width: 100px;
+  height: 100px;
+  grid-area: other-tile;
+}
+
+@media (max-width: 600px) {
+  #project-tiles {
+    grid-template-areas: "
+    main-tile main-tile
+    other-tile other-tile
+    ";
+  }
+}
+
+.project-tile {
+  background-color: cadetblue;
+}

@@ -1,0 +1,14 @@
+nav {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+section {
+  width: 900px;
+  height: fit-content;
+  font-size: 16pt;
+}
+
+@media (min-width: 600px) {
+}
